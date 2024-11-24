@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Profile page</title>
+    </head>
+    <style>
+        body{
+            background-color:#0C090A;
+        }
+        .option{
+            padding:30px;
+            height:60%;
+            background-color:#848482;
+        }
+        img{
+            height:75%;
+            width:55%;
+            padding:5%;
+        }
+        .btn{
+            width:20%;
+            height:10%;
+            padding:auto;
+        }
+        .content{
+            display:flex;
+            flex-direction:column;
+            flex-wrap:wrap;
+            justify-content:center;
+            align-content: center;
+            color:white;
+        }
+        h1{
+            color:white;
+            font-size:45px; 
+            text-align:center;
+        }
+        h3{
+            text-align:center;
+            color:white;
+            font-size:25px
+        }
+    </style>
+    <body>
+        <section>
+            <div class="content">
+                <img src="https://m.media-amazon.com/images/I/611DgSgKvhL.jpg" alt="A good image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyP8PBDJ85qOevFOYpIFTb-cMPTYFZhtLMLg&s">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgRq7CA-9LR1quejTRvdphl_4t6k-3AMKA7g&s">
+            </div>
+            </section>
+            <section class="option">
+        <button class="btn" onclick="window.location.href='{{url_for('upload')}}';">Upload</button></br>
+        <button class="btn" onclick="window.location.href='{{url_for('view')}}';">Download</button>
+    </section>
+    </body>
+</html>

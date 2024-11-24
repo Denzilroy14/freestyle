@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Homepage</title>
+        <meta charset="width=device-width initial-scale=5.0">
+    </head>
+    <style>
+        body{
+            background-color:#0C090A;
+        }
+        .option{
+            padding:30px;
+            height:60%;
+            background-color:#848482;
+        }
+        img{
+            height:75%;
+            width:55%;
+            padding:5%;
+        }
+        .btn{
+            width:20%;
+            height:10%;
+            padding:auto;
+        }
+        .content{
+            display:flex;
+            flex-direction:column;
+            flex-wrap:wrap;
+            justify-content:center;
+            align-content: center;
+        }
+        h1{
+            color:white;
+            font-size:45px; 
+            text-align:center;
+        }
+        h3{
+            text-align:center;
+            color:white;
+            font-size:25px
+        }
+    </style>
+    <body>
+        <section>
+            <h1>Free styler</h1>
+            <h3>Hello there!Upload your files for free
+                and download files,images,videos,audios
+                for free on Free styler!</h3>
+            </h3>
+        </section>
+        <section>
+        <div class="content">
+            <img src="https://m.media-amazon.com/images/I/611DgSgKvhL.jpg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyP8PBDJ85qOevFOYpIFTb-cMPTYFZhtLMLg&s">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgRq7CA-9LR1quejTRvdphl_4t6k-3AMKA7g&s">
+        </div>
+        </section>
+        <section class="option">
+            <p>Start of by creating your account to upload and download content for free</p>
+        <div>
+        <button class="btn" onclick="window.location.href='{{url_for('signin')}}';">Signin</button></br>
+        <button class="btn" onclick="window.location.href='{{url_for('login')}}';">Login</button></br>
+        <p>NOTE:If content uploded by other user seems to be suspicious or
+            is subjected to copyright please dont hesitate to report to 
+            <a href="mailto:denzilroyi@gmail.com">Report!</a>
+        </p>
+        <footer>
+            <p>Share your feedback with us as we value our user's choices</p>
+            <form>
+                <p>Feedback form</p>
+                <label>Enter your name:</label>
+                <input type="text" name="name" required placeholder="Enter your name"></br>
+                <lable>Enter your email:</lable>
+                <input type="email" name="email" required placeholder="Enter your e-mail"></br>
+                <label>Enter your feedback</label></br>
+                <textarea></textarea>
+                <a href="mailto:denzilroyi@gmail.com"><input type="Submit" value="Submit"></a>
+            </form>
+        </footer>
+        </div>
+        </section>
+      </body>
+</html>
