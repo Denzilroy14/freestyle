@@ -103,7 +103,7 @@ def view():
 @app.route('/download/<int:id>')
 def download(id):
     con=init_db()
-    file=con.execute('SELECT filename,file_data FROM userdb WHERE id=?',(id,)).fetchall()
+    file=con.execute('SELECT filename,file_data FROM userdb WHERE id=?',(id,)).fetchone()
     if file:
         filename,file_data=file
         return file_data,200,{
